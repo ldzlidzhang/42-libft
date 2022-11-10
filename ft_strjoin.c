@@ -3,10 +3,10 @@
 /*                                                        :::      ::::::::   */
 /*   ft_strjoin.c                                       :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: lidanzhang <lidanzhang@student.42.fr>      +#+  +:+       +#+        */
+/*   By: lidzhang <lidzhang@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/11/01 10:11:37 by lidanzhang        #+#    #+#             */
-/*   Updated: 2022/11/04 09:17:00 by lidanzhang       ###   ########.fr       */
+/*   Updated: 2022/11/10 14:41:23 by lidzhang         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -39,16 +39,3 @@ char	*ft_strjoin(char const *s1, char const *s2)
 	dest[i] = '\0';
 	return (dest);
 }
-
-/*
-int	main(void)
-{
-	char	str1[] = "Allocates (with malloc(3)) and ";
-	char	str2[] = "returns a new string.";
-	char	*des;
-
-	des = ft_strjoin(str1, str2);
-	printf("%s\n", des);
-	return (0);
-}
-*/

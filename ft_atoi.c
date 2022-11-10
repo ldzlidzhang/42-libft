@@ -3,16 +3,16 @@
 /*                                                        :::      ::::::::   */
 /*   ft_atoi.c                                          :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: lidanzhang <lidanzhang@student.42.fr>      +#+  +:+       +#+        */
+/*   By: lidzhang <lidzhang@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/08/28 09:57:26 by lidzhang          #+#    #+#             */
-/*   Updated: 2022/10/31 22:10:52 by lidanzhang       ###   ########.fr       */
+/*   Updated: 2022/11/10 14:35:04 by lidzhang         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "libft.h"
 
-int	ft_atoi(char *str)
+int	ft_atoi(const char *str)
 {
 	int	result;
 	int	sign;
@@ -33,22 +33,3 @@ int	ft_atoi(char *str)
 	result = sign * result;
 	return (result);
 }
-/*
-#include <stdio.h>
-#include <stdlib.h>
-#include <string.h>
-
-int	main(void)
-{
-	int		val;
-	char	str[20];
-
-	strcpy(str, "98993489");
-	val = ft_atoi(str);
-	printf("String value = %s, Int value = %d\n", str, val);
-	strcpy(str, "-990bgjiu");
-	val = ft_atoi(str);
-	printf("String value = %s, Int value = %d\n", str, val);
-	return (0);
-}
-*/

@@ -6,7 +6,7 @@
 /*   By: lidzhang <lidzhang@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/11/01 21:40:59 by lidanzhang        #+#    #+#             */
-/*   Updated: 2022/11/03 12:35:04 by lidzhang         ###   ########.fr       */
+/*   Updated: 2022/11/10 14:41:13 by lidzhang         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -25,26 +25,3 @@ void	ft_striteri(char *s, void (*f)(unsigned int, char *))
 		i++;
 	}
 }
-/*
-static char	ft_replace(char c)
-{
-		char	ch;
-
-		if (c >= 'A' && c <= 'Z')
-			ch = c + 32;
-		if (c >= 'a' && c <= 'z')
-			ch = c - 32;
-		else
-			ch = c;
-		return (ch);
-}
-
-int		main(void)
-{
-		char	str[] = "holloween";
-		char	*des;
-
-		des = (char *)ft_striteri(str , *ft_replace);
-		return (0);
-}
-*/

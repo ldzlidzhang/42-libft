@@ -3,10 +3,10 @@
 /*                                                        :::      ::::::::   */
 /*   ft_split.c                                         :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: lidanzhang <lidanzhang@student.42.fr>      +#+  +:+       +#+        */
+/*   By: lidzhang <lidzhang@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/11/01 14:20:22 by lidanzhang        #+#    #+#             */
-/*   Updated: 2022/11/04 16:26:39 by lidanzhang       ###   ########.fr       */
+/*   Updated: 2022/11/10 14:40:14 by lidzhang         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -66,24 +66,10 @@ char	**ft_split(char const *s, char c)
 	n = count_words(s, c);
 	dest = malloc(sizeof(char **) * (n + 1));
 	if (dest == NULL)
+	{
+		free(dest);
 		return (NULL);
+	}
 	split_words(dest, s, c, n);
 	return (dest);
 }
-
-/*
-int	main(void)
-{
-	char	str[] = "The array of new strings resulting from the split.";
-	char	**des;
-	char	c = ' ';
-
-	des = ft_split(str, c);
-	while (*des)
-	{
-		printf("%s\n", *des);
-		des++;
-	}
-	return (0);
-}
-*/

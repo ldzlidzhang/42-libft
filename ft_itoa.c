@@ -3,10 +3,10 @@
 /*                                                        :::      ::::::::   */
 /*   ft_itoa.c                                          :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: lidanzhang <lidanzhang@student.42.fr>      +#+  +:+       +#+        */
+/*   By: lidzhang <lidzhang@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/11/01 19:46:33 by lidanzhang        #+#    #+#             */
-/*   Updated: 2022/11/04 17:11:28 by lidanzhang       ###   ########.fr       */
+/*   Updated: 2022/11/10 14:37:16 by lidzhang         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -65,15 +65,3 @@ char	*ft_itoa(int n)
 	to_digit(dest, lnbr, digit, sign);
 	return (dest);
 }
-
-/*
-int	main(void)
-{
-	int	number;
-
-	printf("Enter a number: ");
-	scanf("%d", &number);
-	printf("You have entered: %s \n", ft_itoa(number));
-	return (0);
-}
-*/

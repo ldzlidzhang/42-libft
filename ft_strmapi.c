@@ -3,10 +3,10 @@
 /*                                                        :::      ::::::::   */
 /*   ft_strmapi.c                                       :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: lidanzhang <lidanzhang@student.42.fr>      +#+  +:+       +#+        */
+/*   By: lidzhang <lidzhang@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/11/01 21:07:49 by lidanzhang        #+#    #+#             */
-/*   Updated: 2022/11/04 17:33:07 by lidanzhang       ###   ########.fr       */
+/*   Updated: 2022/11/10 14:42:11 by lidzhang         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -28,23 +28,3 @@ char	*ft_strmapi(char const *s, char (*f)(unsigned int, char))
 	}
 	return (dest);
 }
-
-/*
-char	ft_add(unsigned int n, char ch)
-{
-	char	str;
-
-	str = ch + n;
-	return (str);
-}
-
-int	main(void)
-{
-	char	str1[] = "abc";
-	char	*str2;
-
-	str2 = ft_strmapi(str1, *ft_add);
-	printf("%s\n", str2);
-	return (0);
-}
-*/

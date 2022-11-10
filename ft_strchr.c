@@ -6,7 +6,7 @@
 /*   By: lidzhang <lidzhang@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/10/30 22:53:28 by lidanzhang        #+#    #+#             */
-/*   Updated: 2022/11/03 13:31:08 by lidzhang         ###   ########.fr       */
+/*   Updated: 2022/11/10 14:40:23 by lidzhang         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -20,18 +20,3 @@ char	*ft_strchr(const char *s, int c)
 		return ((char *)s);
 	return (NULL);
 }
-/*
-#include <stdio.h>
-#include <string.h>
-
-int	 main(void)
-{
-	const char	str[] = "This is the C string to be scanned";
-	const char	ch = 'C';
-	char		*ret;
-
-	ret = ft_strchr(str, ch);
-	printf("String after |%c| is - |%s|\n", ch, ret);
-	return (0);
-}
-*/

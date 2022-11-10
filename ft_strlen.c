@@ -3,10 +3,10 @@
 /*                                                        :::      ::::::::   */
 /*   ft_strlen.c                                        :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: lidanzhang <lidanzhang@student.42.fr>      +#+  +:+       +#+        */
+/*   By: lidzhang <lidzhang@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/10/28 13:36:11 by lidanzhang        #+#    #+#             */
-/*   Updated: 2022/11/03 22:18:20 by lidanzhang       ###   ########.fr       */
+/*   Updated: 2022/11/10 14:41:56 by lidzhang         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -24,19 +24,3 @@ size_t	ft_strlen(const char *str)
 	}
 	return (i);
 }
-/*
-#include <stdio.h>
-#include <string.h>
-
-int	main(void)
-{
-	char a[20]="Program";
-	char b[20]={'P','r','o','g','r','a','m','\0'};
-
-	printf("Length of string a = %zu \n",strlen(a));
-	printf("Length of string b = %zu \n",strlen(b));
-	printf("Length of string a = %zu \n",ft_strlen(a));
-	printf("Length of string b = %zu \n",ft_strlen(b));
-	return (0);
-}
-*/

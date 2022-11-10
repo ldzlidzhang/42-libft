@@ -3,10 +3,10 @@
 /*                                                        :::      ::::::::   */
 /*   ft_strrchr.c                                       :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: lidanzhang <lidanzhang@student.42.fr>      +#+  +:+       +#+        */
+/*   By: lidzhang <lidzhang@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/11/03 13:22:46 by lidzhang          #+#    #+#             */
-/*   Updated: 2022/11/03 22:25:17 by lidanzhang       ###   ########.fr       */
+/*   Updated: 2022/11/10 14:42:48 by lidzhang         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -14,35 +14,18 @@
 
 char	*ft_strrchr(const char *s, int c)
 {
-	int			i;
-	const char	*ini;
+	char	*dest;
+	int		i;
 
-	ini = s;
-	i = ft_strlen(s);
-	s = (s + i);
-	while (*s != *ini && c != *s)
-		s--;
-	if (c == *s)
-		return ((char *)s);
-	return (0);
+	dest = NULL;
+	i = 0;
+	while (s[i])
+	{
+		if (s[i] == (char)c)
+			dest = &((char *)s)[i];
+		i++;
+	}
+	if (c == '\0')
+		dest = &((char *)s)[i];
+	return (dest);
 }
-/*
-The strrchr() function locates the last occurrence of c (converted to a
-char) in the string s.  If c is `\0', strrchr() locates the terminating
-`\0'.
-*/
-/*
-#include <stdio.h>
-#include <string.h>
-
-int	 main(void)
-{
-	const char	str[] = "This is the C string to be scanned";
-	const char	ch = 'C';
-	char		*ret;
-
-	ret = ft_strrchr(str, ch);
-	printf("String after |%c| is - |%s|\n", ch, ret);
-	return (0);
-}
-*/

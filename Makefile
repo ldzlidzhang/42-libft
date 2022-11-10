@@ -3,10 +3,10 @@
 #                                                         :::      ::::::::    #
 #    Makefile                                           :+:      :+:    :+:    #
 #                                                     +:+ +:+         +:+      #
-#    By: lidanzhang <lidanzhang@student.42.fr>      +#+  +:+       +#+         #
+#    By: lidzhang <lidzhang@student.42.fr>          +#+  +:+       +#+         #
 #                                                 +#+#+#+#+#+   +#+            #
 #    Created: 2022/10/26 16:03:48 by lidanzhang        #+#    #+#              #
-#    Updated: 2022/11/04 18:13:36 by lidanzhang       ###   ########.fr        #
+#    Updated: 2022/11/10 14:29:06 by lidzhang         ###   ########.fr        #
 #                                                                              #
 # **************************************************************************** #
 
@@ -27,7 +27,7 @@ BONUS		=	ft_lstadd_front.c ft_lstnew.c ft_lstadd_back.c ft_lstclear.c \
 
 BONUS_OBJS  =	$(BONUS:.c=.o)
 
-CC			=	gcc
+CC			=	cc
 
 RM			=	rm -fr
 

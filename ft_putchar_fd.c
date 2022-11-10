@@ -3,10 +3,10 @@
 /*                                                        :::      ::::::::   */
 /*   ft_putchar_fd.c                                    :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: lidanzhang <lidanzhang@student.42.fr>      +#+  +:+       +#+        */
+/*   By: lidzhang <lidzhang@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/11/01 21:52:22 by lidanzhang        #+#    #+#             */
-/*   Updated: 2022/11/06 23:13:10 by lidanzhang       ###   ########.fr       */
+/*   Updated: 2022/11/10 14:39:12 by lidzhang         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -17,17 +17,3 @@ void	ft_putchar_fd(char c, int fd)
 {
 	write(fd, &c, 1);
 }
-/*
-int	main(void)
-{
-	char i = 'A';
-	
-	while (i <= 'Z')
-	{
-		ft_putchar_fd(i, 1);
-		ft_putchar_fd('\n', 1);
-		i++;
-	}
-	return (0);
-}
-*/

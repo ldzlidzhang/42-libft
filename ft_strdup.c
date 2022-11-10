@@ -3,10 +3,10 @@
 /*                                                        :::      ::::::::   */
 /*   ft_strdup.c                                        :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: lidanzhang <lidanzhang@student.42.fr>      +#+  +:+       +#+        */
+/*   By: lidzhang <lidzhang@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/10/31 23:39:40 by lidanzhang        #+#    #+#             */
-/*   Updated: 2022/11/03 23:33:52 by lidanzhang       ###   ########.fr       */
+/*   Updated: 2022/11/10 14:40:57 by lidzhang         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -24,15 +24,3 @@ char	*ft_strdup(const char *s)
 	ft_memcpy(s_alloc, s, len);
 	return (s_alloc);
 }
-
-/*
-int	main(void)
-{
-	char	*str = "Helloworld";
-	char	*result;
-
-	result = ft_strdup(str);
-	printf("The string : %s\n", result);
-	return (0);
-}
-*/

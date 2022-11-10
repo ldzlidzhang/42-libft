@@ -3,10 +3,10 @@
 /*                                                        :::      ::::::::   */
 /*   ft_putendl_fd.c                                    :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: lidanzhang <lidanzhang@student.42.fr>      +#+  +:+       +#+        */
+/*   By: lidzhang <lidzhang@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/11/01 22:12:01 by lidanzhang        #+#    #+#             */
-/*   Updated: 2022/11/06 23:38:27 by lidanzhang       ###   ########.fr       */
+/*   Updated: 2022/11/10 14:39:24 by lidzhang         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -27,19 +27,3 @@ void	ft_putendl_fd(char *s, int fd)
 	}
 	write(fd, "\n", 1);
 }
-
-/*
-int main(void)
-{
-	char *s = "have a nice day !";
-	int	fd;
-	
-	fd = 0;
-	while (fd < 5)
-	{
-		ft_putendl_fd(s, fd);
-		fd++;
-	}
-	return (0);
-}
-*/

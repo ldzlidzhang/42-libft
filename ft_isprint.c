@@ -1,12 +1,12 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   isprint.c                                          :+:      :+:    :+:   */
+/*   ft_isprint.c                                       :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: lidanzhang <lidanzhang@student.42.fr>      +#+  +:+       +#+        */
+/*   By: lidzhang <lidzhang@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/10/28 12:59:51 by lidanzhang        #+#    #+#             */
-/*   Updated: 2022/10/28 13:35:12 by lidanzhang       ###   ########.fr       */
+/*   Updated: 2022/11/10 14:37:01 by lidzhang         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -18,16 +18,3 @@ int	ft_isprint(int c)
 		return (1);
 	return (0);
 }
-/*
-#include <ctype.h>
-#include <stdio.h>
-
-int	main(void)
-{
-	int	c;
-	for (c = 1; c <= 127; c++)
-		if (ft_isprint(c) != 0)
-			printf("%c ", c);
-	return (0);
-}
-*/

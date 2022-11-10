@@ -3,10 +3,10 @@
 /*                                                        :::      ::::::::   */
 /*   ft_substr.c                                        :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: lidanzhang <lidanzhang@student.42.fr>      +#+  +:+       +#+        */
+/*   By: lidzhang <lidzhang@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/11/01 09:41:53 by lidanzhang        #+#    #+#             */
-/*   Updated: 2022/11/04 08:52:46 by lidanzhang       ###   ########.fr       */
+/*   Updated: 2022/11/10 14:43:12 by lidzhang         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -14,44 +14,26 @@
 
 char	*ft_substr(char const *s, unsigned int start, size_t len)
 {
-	char			*dest;
-	unsigned int	i;
+	size_t	count;
+	size_t	size;
+	char	*tab;
 
 	if (!s)
 		return (NULL);
-	if ((size_t)start > ft_strlen(s))
-	{
-		dest = malloc(sizeof(char) * 1);
-		if (dest == NULL)
-			return (NULL);
-		dest[0] = 0;
-		return (dest);
-	}
-	dest = malloc(sizeof(char) * (len + 1));
-	if (dest == NULL)
+	if ((unsigned int)ft_strlen(s) < start)
+		return (ft_strdup(""));
+	size = ft_strlen(s + start);
+	if (size < len)
+		len = size;
+	tab = (char *)malloc((len + 1) * sizeof(char));
+	if (!tab)
 		return (NULL);
-	i = 0;
-	while ((char)s[start] && (size_t)i < len)
+	count = 0;
+	while (count < len)
 	{
-		dest[i] = (char)s[start];
-		i++;
-		start++;
+		tab[count] = s[start + count];
+		count++;
 	}
-	dest[i] = 0;
-	return (dest);
+	tab[count] = '\0';
+	return (tab);
 }
-
-/*
-int	main(void)
-{
-	char	src[] = "substr function Implementation";
-	char	*dest;
-	int		m = 7;
-	int		n = 8;
-
-	dest = ft_substr(src, m, n);
-	printf("%s\n", src);
-	printf("%s\n", dest);
-	return (0);
-}
-*/

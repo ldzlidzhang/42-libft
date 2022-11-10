@@ -3,10 +3,10 @@
 /*                                                        :::      ::::::::   */
 /*   ft_putstr_fd.c                                     :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: lidanzhang <lidanzhang@student.42.fr>      +#+  +:+       +#+        */
+/*   By: lidzhang <lidzhang@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/11/01 21:57:58 by lidanzhang        #+#    #+#             */
-/*   Updated: 2022/11/06 23:18:47 by lidanzhang       ###   ########.fr       */
+/*   Updated: 2022/11/10 14:39:45 by lidzhang         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -26,20 +26,3 @@ void	ft_putstr_fd(char *s, int fd)
 		i++;
 	}
 }
-
-/*
-int main(void)
-{
-	char *s = "have a nice day !";
-	int	fd;
-	
-	fd = 0;
-	while (fd < 5)
-	{
-		ft_putstr_fd(s, fd);
-		ft_putchar_fd('\n', fd);
-		fd++;
-	}
-	return (0);
-}
-*/

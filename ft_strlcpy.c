@@ -6,7 +6,7 @@
 /*   By: lidzhang <lidzhang@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/11/03 13:55:42 by lidzhang          #+#    #+#             */
-/*   Updated: 2022/11/03 14:24:50 by lidzhang         ###   ########.fr       */
+/*   Updated: 2022/11/10 14:41:47 by lidzhang         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -31,14 +31,3 @@ size_t	ft_strlcpy(char *dst, const char *src, size_t size)
 		i++;
 	return (i);
 }
-/*
-int	main(void)
-{
-	char	str1[20] = "hello 42 hiver";
-	char	str2[20];
-
-	printf("length %zu\n", ft_strlcpy(str2, str1, 10));
-	printf("After strcpy: %s\n", str2);
-	return (0);
-}
-*/

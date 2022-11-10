@@ -3,10 +3,10 @@
 /*                                                        :::      ::::::::   */
 /*   ft_calloc.c                                        :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: lidanzhang <lidanzhang@student.42.fr>      +#+  +:+       +#+        */
+/*   By: lidzhang <lidzhang@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/10/31 22:11:51 by lidanzhang        #+#    #+#             */
-/*   Updated: 2022/11/03 23:29:11 by lidanzhang       ###   ########.fr       */
+/*   Updated: 2022/11/10 14:35:32 by lidzhang         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -19,61 +19,17 @@ where as calloc sets allocated memory to zero.
 
 #include "libft.h"
 
-void	ft_bzero(void *s, size_t n);
-void	*ft_memset(void *s, int c, size_t n);
-
 void	*ft_calloc(size_t count, size_t size)
 {
-	void	*pt;
+	int		len;
+	void	*ptr;
 
-	pt = (void *)malloc(count * size);
-	if (!pt)
-		return (NULL);
-	ft_bzero(pt, (count * size));
-	return (pt);
-}
-
-/* calloc
-int	main(void)
-{
-	int	i;
-	int	n;
-	int	*a;
-
-	printf("Number of elements to be entered:");
-	scanf("%d", &n);
-	a = (int *)ft_calloc(n, sizeof(int));
-	printf("Enter %d numbers:\n", n);
-	i = 0;
-	while (i < n)
+	len = count * size;
+	ptr = malloc(len);
+	if (ptr)
 	{
-		scanf("%d", &a[i]);
-		i++;
+		ft_bzero(ptr, len);
+		return (ptr);
 	}
-	printf("The numbers entered are: ");
-	i = 0;
-	while (i < n)
-	{
-		printf("%d ", a[i]);
-		i++;
-	}
-	printf("\n");
-	free(a);
-	return (0);
+	return (NULL);
 }
-*/
-/* malloc 
-int	main(void)
-{
-	char	*str;
-
-	str = (char *) malloc(15);
-	strcpy(str, "tutorialspoint");
-	printf("String = %s,  Address = %p\n", str, str);
-	str = (char *) realloc(str, 25);
-	strcat(str, ".com");
-	printf("String = %s,  Address = %p\n", str, str);
-	free(str);
-	return (0);
-}
-*/
